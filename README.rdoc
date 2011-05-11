@@ -12,7 +12,7 @@ http://getfavicon.appspot.com/
 
 == Example
 
-http://<appengine domain>/http://www.google.com?defaulticon=http://en.wikipedia.org/favicon.ico
+    http://<appengine domain>/http://www.google.com?defaulticon=http://en.wikipedia.org/favicon.ico
 
 == Options
 
