@@ -1,0 +1,13 @@
+{% extends "page.html" %}
+
+{% block body %}
+
+<p>Test getFavicon using sites from Google's <a href="http://www.google.com/adplanner/static/top1000/">1000 most-visited sites on the web</a> list.</p>
+
+<ul class="icons">
+{% for topSite in topSites %}
+	<li><a href="{{ topSite }}"><img src="{% if not isDev %}//{{ topSite.11 }}.getfavicon.appspot.com{% endif %}/{{ topSite }}" alt="{{ topSite }}"/></a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

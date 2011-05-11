@@ -1,0 +1,4 @@
+cron:
+- description: Cache cleanup
+  url: /_cleanup
+  schedule: every 1 minutes

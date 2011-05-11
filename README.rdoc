@@ -1,0 +1,36 @@
+= getFavicon
+
+Retrieves the relevant favicon for a URL, or returns a default icon should it not be able to find it. Works better than the Google version as it will find favicons specified by an HTML page's <link> element. Feel free to hotlink, although it would be nice if you could email me if you're going to make more than a couple of requests a second.
+
+== Setup
+
+Download Google AppEngine Python SDK and deplot the favicon code on a new appengine.
+
+== Original source
+
+http://getfavicon.appspot.com/
+
+== Example
+
+http://<appengine domain>/http://www.google.com?defaulticon=http://en.wikipedia.org/favicon.ico
+
+== Options
+
+You can also pass the following defaulticon values for other responses when a favicon isn't found:
+
+* none: no default icon will be returned (and an HTTP 204 "No content" response code)
+* 1pxgif: 1px x 1px transparent GIF
+* lightpng: grey 'world' icon (as used by Google Chrome)
+* bluepng: light blue 'world' icon (as used by Google's favicon service)
+
+== De-cache
+
+You can remove an icon from the cache by calling /decache/?domain=[domain]. E.g. /decache/?domain=http://www.google.com.
+
+== Original Copyright
+
+* {Jason Cartwright}[http://www.jasoncartwright.com/]
+
+== License
+
+No restrictions.

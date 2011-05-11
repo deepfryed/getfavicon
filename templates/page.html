@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}getFavicon</title>
+		<style>
+			body {
+				font-family:Helvetica,Arial,sans-serif;
+				font-size:10pt;
+			}
+			pre {
+				font-size:9pt;
+			}
+			#container {
+				width:740px;
+			}
+			h1 {
+				margin-top:0;
+				font-size:18pt;
+			}
+			h1 a {
+				color:#000;
+			}
+			h2 {
+				font-size:13pt;
+				margin-bottom:0;
+			}
+			h3 {
+				font-size:10pt;
+			}
+			ul {
+				list-style:none;
+				margin:0;
+				padding:0;
+			}
+			img {
+				border:0;
+			}
+			li img {
+				width:16px;
+				height:16px;
+			}
+			#delicious li {
+				display:inline;
+			}
+			dt {
+				font-weight:bold;
+			}
+			dd {
+				margin-left:0;
+			}
+			.icons {
+				width:60%
+			}
+			.icons li {
+				display:inline;
+			}
+			.ancillary {
+				color:#666;
+				font-size:8pt;
+				padding:0;
+				margin:0;
+				font-weight:normal;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			{% if isHomepage %}
+				<h1>getFavicon</h1>
+			{% else %}
+				<h1><a href="/">getFavicon</a></h1>
+			{% endif %}
+			{% block body %}{% endblock %}
+		</div>
+	</body>
+</html>
