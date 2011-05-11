@@ -1,6 +1,6 @@
 = getFavicon
 
-Retrieves the relevant favicon for a URL, or returns a default icon should it not be able to find it. Works better than the Google version as it will find favicons specified by an HTML page's <link> element. Feel free to hotlink, although it would be nice if you could email me if you're going to make more than a couple of requests a second.
+Retrieves the relevant favicon for a URL, or returns a default icon should it not be able to find it. Works better than the Google version as it will find favicons specified by an HTML page's <link> element.
 
 == Setup
 
