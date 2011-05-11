@@ -4,7 +4,7 @@ Retrieves the relevant favicon for a URL, or returns a default icon should it no
 
 == Setup
 
-Download Google AppEngine Python SDK and deplot the favicon code on a new appengine.
+Download Google AppEngine Python SDK and deploy the favicon code on a new appengine.
 
 == Original source
 
